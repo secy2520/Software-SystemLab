@@ -15,11 +15,10 @@ perror("Failed to open file");
 
 exit(1);
 }
+}
 while(1)
 {
-fprintf(files[i],"This is the file");
-//sleep(1);
-}
+sleep(1);
 }
 for(int i=0;i<5;i++)
 {
