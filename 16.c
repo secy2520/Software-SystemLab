@@ -15,17 +15,33 @@ int main()
   lock.l_len     = 0;        
   savelock = lock;
   fcntl(fd, F_GETLK, &lock);  /* Overwrites lock structure with preventors. */
-  if (lock.l_type == F_WRLCK)
+   if (lock.l_type == F_RDLCK)
   {
-     printf("Process  has a write lock already!\n");
-     exit(1);
-  }
-  else if (lock.l_type == F_RDLCK)
-  {
-     printf("Process  has a read lock already!\n");
-     exit(1);
-  }
-  else
-     fcntl(fd, F_SETLK, &savelock);
-  pause();
+     printf("Process  has a read lock already!.... Waiting\n");
+     while(lock.l_type==F_RDLCK)
+    {
+     fcntl(fd,F_GETLK, &lock); 
+}
+}
+if(fcntl(fd, F_SETLKW, &savelock)==-1)
+{
+    printf("Error implementing write lock..\n");
+}
+printf("Now implementing the write lock..\n");
+printf("Press enter to free the lock and come out of critical section...\n");
+
+//getchar();
+getchar();
+savelock.l_type=F_UNLCK;
+    if (fcntl(fd, F_SETLK, &savelock) == -1) {
+        perror("Error unlocking");
+        close(fd);
+        exit(1);
+    }
+
+    printf("Successfully unlocked and come out of the critical section\n");
+
+    close(fd);
+
+    return 0;
 }
