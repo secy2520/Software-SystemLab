@@ -9,12 +9,12 @@ int main()
   struct flock lock, savelock;
 
   fd = open("record1.txt", O_RDWR);
-  lock.l_type    = F_WRLCK;   /* Test for any lock on any part of file. */
+  lock.l_type    = F_WRLCK;  
   lock.l_start   = 0;
   lock.l_whence  = SEEK_SET;
   lock.l_len     = 0;        
   savelock = lock;
-  fcntl(fd, F_GETLK, &lock);  /* Overwrites lock structure with preventors. */
+  fcntl(fd, F_GETLK, &lock);  
    if (lock.l_type == F_RDLCK)
   {
      printf("Process  has a read lock already!.... Waiting\n");
