@@ -1,4 +1,4 @@
-#include <sys/types.h>   /***********  Write Lock Setter  *******/
+#include <sys/types.h>   
 #include <unistd.h>      
 #include <fcntl.h>
 #include<stdlib.h>
