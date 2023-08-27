@@ -37,14 +37,16 @@ int main() {
         close(fd);
         exit(1);
     } else if (lock.l_type == F_RDLCK) {
-        printf("Process has a read lock already! Waiting...\n");
-        while (lock.l_type == F_RDLCK) {
+        printf("Process has a read lock already on this record! Waiting...\n");
+}
+        while (lock.l_type == F_RDLCK)
+ {
             fcntl(fd, F_GETLK, &lock);
         }
-    }
+ 
 
     // Set the write lock
-    if (fcntl(fd, F_SETLK, &savelock) == -1) {
+    if (fcntl(fd, F_SETLKW, &savelock) == -1) {
         perror("Error setting write lock");
         close(fd);
         exit(1);

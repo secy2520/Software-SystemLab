@@ -3,15 +3,6 @@
 #include <fcntl.h>
 #include <stdlib.h>
 #include <stdio.h>
-#include <signal.h>
-
-int writeLockReleased = 0;
-
-void handleSignal(int signum) {
-    if (signum == SIGUSR1) {
-        writeLockReleased = 1;
-    }
-}
 
 struct {
     int enrollment;
@@ -40,8 +31,6 @@ int main() {
     lock.l_pid = getpid();
     savelock = lock;
 
-    // Set up the signal handler
-    signal(SIGUSR1, handleSignal);
 
     // Check the existing locks
     if (fcntl(fd, F_GETLK, &lock) == -1) {
@@ -51,17 +40,17 @@ int main() {
     }
 
     if (lock.l_type == F_WRLCK) {
-        printf("Process has a write lock already! Waiting...\n");
-        while (!writeLockReleased) {
-            pause();  // Wait for the signal
+        printf("Process has a write lock already on this particular record! Waiting...\n");
+        while (lock.l_type == F_WRLCK) {
+            fcntl(fd,F_GETLK, &lock);
         }
-        writeLockReleased = 0;  // Reset the flag
+       
     }
 
     printf("Before entering into the critical section\n");
 
     // Set the read lock
-    if (fcntl(fd, F_SETLK, &savelock) == -1) {
+    if (fcntl(fd, F_SETLKW, &savelock) == -1) {
         perror("Error setting read lock");
         close(fd);
         exit(1);
@@ -88,3 +77,5 @@ int main() {
 
     return 0;
 }
+
+
