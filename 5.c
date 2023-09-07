@@ -1,3 +1,16 @@
+/*
+-------------------------------------------------------
+-------------------------------------------------------
+
+Name-5.c
+Author-Jass Sadana
+Description-Write a program to create five new files with infinite loop.
+
+-------------------------------------------------------
+-------------------------------------------------------
+*/
+
+
 #include<stdio.h>
 #include<unistd.h>
 #include<stdlib.h>
