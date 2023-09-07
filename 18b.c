@@ -1,3 +1,15 @@
+/*
+-------------------------------------------------------
+-------------------------------------------------------
+
+Name-18b.c
+Author-Jass Sadana
+Description- Write a program to perform Record locking.
+b. Implement read lock
+-------------------------------------------------------
+-------------------------------------------------------
+*/
+
 #include <sys/types.h>
 #include <unistd.h>
 #include <fcntl.h>
