@@ -1,3 +1,16 @@
+/*
+-------------------------------------------------------
+-------------------------------------------------------
+
+Name-16b.c
+Author-Jass Sadana
+Description- Write a program to perform mandatory locking.
+a. Implement read lock
+-------------------------------------------------------
+-------------------------------------------------------
+*/
+
+
 #include <stdio.h>      
 #include <sys/types.h>
 #include <sys/stat.h>
