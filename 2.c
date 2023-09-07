@@ -1,3 +1,18 @@
+/*
+-------------------------------------------------------
+-------------------------------------------------------
+
+Name-1a.c
+Author-Jass Sadana
+Description-Write a simple program to execute in an infinite loop at the background.
+
+-------------------------------------------------------
+-------------------------------------------------------
+*/
+
+
+
+
 #include<stdio.h>
 #include<unistd.h>
 
