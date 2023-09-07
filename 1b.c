@@ -2,9 +2,9 @@
 -------------------------------------------------------
 -------------------------------------------------------
 
-Name - 1a.c
+Name - 1b.c
 Author - Jass Sadana
-Description - Hard linkfile program (symlink system call)
+Description - Hard linkfile program (link system call)
 
 -------------------------------------------------------
 -------------------------------------------------------
