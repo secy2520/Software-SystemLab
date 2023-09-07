@@ -1,3 +1,17 @@
+/*
+-------------------------------------------------------
+-------------------------------------------------------
+
+Name-16a.c
+Author-Jass Sadana
+Description- Write a program to perform mandatory locking.
+a. Implement write lock
+-------------------------------------------------------
+-------------------------------------------------------
+*/
+
+
+
 #include <sys/types.h>   
 #include <unistd.h>      
 #include <fcntl.h>
