@@ -32,7 +32,6 @@ int main() {
             char ch = buff[i];
             
             if (ch == '\n') {
-                printf(",");
                 printf("\n");
             } else {
                 printf("%c",ch);
