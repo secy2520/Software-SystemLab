@@ -1,3 +1,15 @@
+/*
+-------------------------------------------------------
+-------------------------------------------------------
+
+Name-1c.c
+Author-Jass Sadana
+Description-FIFO (mkfifo Library Function or mknod system call)
+
+-------------------------------------------------------
+-------------------------------------------------------
+*/
+
 #include<stdio.h>
 #include<sys/types.h>
 #include<sys/stat.h>
