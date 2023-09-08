@@ -1,3 +1,15 @@
+/*
+-------------------------------------------------------
+-------------------------------------------------------
+Name - 29.c
+Author - Jass Sadana
+Description - Write a program to get scheduling policy and modify the scheduling policy (SCHED_FIFO,
+SCHED_RR).
+Date-1-8-23
+-------------------------------------------------------
+-------------------------------------------------------
+*/
+
 #include<stdio.h>
 #include<sched.h>
 #include<stdlib.h>
