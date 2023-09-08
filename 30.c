@@ -1,3 +1,14 @@
+/*
+-------------------------------------------------------
+-------------------------------------------------------
+Name - 30.c
+Author - Jass Sadana
+Description - Write a program to run a script at a specific time using a Daemon process.
+Date-1-8-23
+-------------------------------------------------------
+-------------------------------------------------------
+*/
+
 #include<stdio.h>
 #include<unistd.h>
 #include<stdlib.h>
