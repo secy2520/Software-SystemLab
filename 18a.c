@@ -6,6 +6,7 @@ Name-18a.c
 Author-Jass Sadana
 Description- Write a program to perform Record locking.
 a. Implement write lock
+Date-25-8-23
 -------------------------------------------------------
 -------------------------------------------------------
 */
