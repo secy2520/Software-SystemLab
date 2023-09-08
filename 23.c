@@ -1,3 +1,16 @@
+/*
+-------------------------------------------------------
+-------------------------------------------------------
+
+Name - 23.c
+Author - Jass Sadana
+Description - Write a program to create a Zombie state of the running program.
+Date-1-8-23
+-------------------------------------------------------
+-------------------------------------------------------
+*/
+
+
 #include<stdio.h>
 #include<unistd.h>
 #include<sys/types.h>
