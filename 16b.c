@@ -6,6 +6,7 @@ Name-16b.c
 Author-Jass Sadana
 Description- Write a program to perform mandatory locking.
 a. Implement read lock
+Date-25-8-23
 -------------------------------------------------------
 -------------------------------------------------------
 */
