@@ -5,7 +5,7 @@
 Name-6.c
 Author-Jass Sadana
 Description-Write a program to take input from STDIN and display on STDOUT. Use only read/write system calls
-
+Date-11-8-23
 -------------------------------------------------------
 -------------------------------------------------------
 */
