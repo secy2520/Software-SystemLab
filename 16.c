@@ -6,6 +6,7 @@ Name-16a.c
 Author-Jass Sadana
 Description- Write a program to perform mandatory locking.
 a. Implement write lock
+Date-25-8-23
 -------------------------------------------------------
 -------------------------------------------------------
 */
