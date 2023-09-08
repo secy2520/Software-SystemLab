@@ -5,7 +5,7 @@
 Name-12.c
 Author-Jass Sadana
 Description-Write a program to find out the opening mode of a file. Use fcntl.
-
+Date-25-8-23
 -------------------------------------------------------
 -------------------------------------------------------
 */
