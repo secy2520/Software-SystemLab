@@ -1,17 +1,35 @@
-#include<stdio.h>
-#include<stdlib.h>
-#include<unistd.h>
-int main (void)
+#include <stdio.h>
+#include <stdlib.h>
+#include <unistd.h>
+#include <sys/time.h>
+#include <errno.h>
+
+int main(void)
 {
-printf("Hello World....\n");
-int x;
-x=nice(0);
-printf("Current priority of the process is %d..", x);
+    printf("Hello World....\n");
+    int x;
 
-int y;
-y=nice(5);
-printf("Current priority of the process is %d..", y);
+    x = nice(0);
+    if (x == -1)
+    {
+        perror("Error setting priority: ");
+    }
+    else
+    {
+        printf("Current priority of the process is %d..\n", x);
+    }
 
+    int y;
+    y = nice(5);
+    if (y == -1)
+    {
+        perror("Error setting priority: ");
+    }
+    else
+    {
+        printf("Current priority of the process is %d..\n", y);
+    }
 
-return 0;
+    return 0;
 }
+
