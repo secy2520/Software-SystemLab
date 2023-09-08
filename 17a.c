@@ -1,3 +1,16 @@
+/*
+-------------------------------------------------------
+-------------------------------------------------------
+Name-17a.c
+Author-Jass Sadana
+Description- Write a separate program, to open the file, implement write lock, read the ticket number, increment the number and print
+the new ticket number then close the file
+Date-25-8-23
+-------------------------------------------------------
+-------------------------------------------------------
+*/
+
+
 #include<stdio.h>
 #include<fcntl.h>
 #include<stdlib.h>
