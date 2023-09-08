@@ -1,3 +1,16 @@
+/*
+-------------------------------------------------------
+-------------------------------------------------------
+Name - 27b.c
+Author - Jass Sadana
+Description - Write a program to execute ls -Rl by the following system calls
+b. execle
+Date-1-8-23
+-------------------------------------------------------
+-------------------------------------------------------
+*/
+
+
 #include<unistd.h>
 #include<stdio.h>
 #include<stdlib.h>
