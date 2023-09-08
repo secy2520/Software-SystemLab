@@ -1,3 +1,5 @@
+
+
 #include<stdio.h>
 #include<unistd.h>
 #include<stdlib.h>
@@ -7,7 +9,8 @@ if(!fork())
 {
 printf("I am child and my ID is.. %d\n", getpid());
 sleep(3);
-printf("I am a orphan child now and my ID is... %d\n", getppid());
+printf("Hey this child and I am orphan now...Press enter to kill me... \n");
+getchar();
 }
 else
 {
