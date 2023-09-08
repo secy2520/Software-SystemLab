@@ -5,7 +5,7 @@
 Name-21.c
 Author-Jass Sadana
 Description-Write a program, call fork and print the parent and child process id.
-Date-25-8-23
+Date-1-8-23
 -------------------------------------------------------
 -------------------------------------------------------
 */
